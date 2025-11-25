@@ -53,13 +53,13 @@ const Footer = () => {
                     <div>
                         <div className="text-[#808080] text-xs font-bold uppercase mb-6 tracking-widest">SOCIAL PRESENCE</div>
                         <div className="space-y-4">
-                            <a href="#" className="flex items-center gap-3 text-white hover:text-[#00FF88] transition-colors group">
+                            <a href="https://www.linkedin.com/in/riccardo-praolini-0929a4306" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white hover:text-[#00FF88] transition-colors group">
                                 <div className="w-8 h-8 rounded-full bg-neutral-900 flex items-center justify-center group-hover:bg-[#00FF88]/10 transition-colors">
                                     <Linkedin size={16} className="text-[#B0B0B0] group-hover:text-blue-500" />
                                 </div>
                                 <span className="text-sm">LinkedIn</span>
                             </a>
-                            <a href="#" className="flex items-center gap-3 text-white hover:text-[#00FF88] transition-colors group">
+                            <a href="https://github.com/riccardopraolini" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white hover:text-[#00FF88] transition-colors group">
                                 <div className="w-8 h-8 rounded-full bg-neutral-900 flex items-center justify-center group-hover:bg-[#00FF88]/10 transition-colors">
                                     <Github size={16} className="text-[#B0B0B0] group-hover:text-white" />
                                 </div>
@@ -76,10 +76,10 @@ const Footer = () => {
                                 <span>Download CV</span>
                                 <Download size={16} />
                             </button>
-                            <button className="w-full px-4 py-3 bg-[#0A0A0A] border border-neutral-800 text-white rounded text-sm font-bold hover:border-[#00FF88] hover:text-[#00FF88] transition-colors flex items-center justify-between gap-6">
+                            <a href="https://calendar.notion.so/meet/riccardopraolini/ct4lt4o9p" target="_blank" rel="noopener noreferrer" className="w-full px-4 py-3 bg-[#0A0A0A] border border-neutral-800 text-white rounded text-sm font-bold hover:border-[#00FF88] hover:text-[#00FF88] transition-colors flex items-center justify-between gap-6">
                                 <span>Schedule a Chat</span>
                                 <Calendar size={16} />
-                            </button>
+                            </a>
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@ const Footer = () => {
 
 
                 {/* BOTTOM BAR */}
-                <div className="text-center text-[#666666] text-xs font-mono">
+                <div className="text-center text-neutral-500 text-xs font-mono">
                     © 2025 Riccardo Praolini
                 </div>
 
