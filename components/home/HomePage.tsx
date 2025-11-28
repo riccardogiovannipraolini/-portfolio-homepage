@@ -155,46 +155,34 @@ const App = () => {
             {/* 4. GRID CARDS */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full animate-in slide-in-from-bottom-12 fade-in duration-1000 delay-300">
 
-              {/* CARD 1: Agile Delivery */}
-              <div className="bg-neutral-900/80 border border-neutral-800 p-8 rounded-sm text-left hover:border-orange-500/30 transition-colors group">
-                <div className="mb-4 bg-orange-500/10 w-12 h-12 flex items-center justify-center rounded-full group-hover:bg-orange-500/20 transition-colors">
-                  <CheckCircle2 className="text-orange-500" size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 font-serif">Agile Delivery</h3>
-                <p className="text-sm text-neutral-400 leading-relaxed mb-6">
-                  Trasformo roadmap ambigue in ticket Jira pronti per il dev. Focus su sbloccare il team e ridurre il time-to-market.
+              {/* CARD 1: Execution Log */}
+              <div className="bg-transparent border border-neutral-700 p-8 rounded-sm text-left hover:border-neutral-500 transition-colors">
+                <div className="font-mono text-xs text-neutral-500 mb-4">// EXECUTION_LOG</div>
+                <div className="text-4xl font-bold text-white mb-2">10+ Team Size</div>
+                <div className="text-xl text-white mb-4">-30% Overhead</div>
+                <p className="text-sm text-neutral-400 leading-relaxed">
+                  Coordinamento cross-funzionale (Nameless) e ottimizzazione processi.
                 </p>
-                <div className="font-mono text-xs font-bold text-orange-500 uppercase tracking-wider">
-                  🚀 Shipped 2 MVPs
-                </div>
               </div>
 
-              {/* CARD 2: Data-Informed Discovery */}
-              <div className="bg-neutral-900/80 border border-neutral-800 p-8 rounded-sm text-left hover:border-blue-500/30 transition-colors group">
-                <div className="mb-4 bg-blue-500/10 w-12 h-12 flex items-center justify-center rounded-full group-hover:bg-blue-500/20 transition-colors">
-                  <LineChart className="text-blue-500" size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 font-serif">Data-Informed Discovery</h3>
-                <p className="text-sm text-neutral-400 leading-relaxed mb-6">
-                  Non tiro a indovinare. Uso SQL e Pandas per validare le ipotesi e interviste utente per definire il 'Cosa'.
+              {/* CARD 2: Data Source */}
+              <div className="bg-transparent border border-neutral-700 p-8 rounded-sm text-left hover:border-neutral-500 transition-colors">
+                <div className="font-mono text-xs text-neutral-500 mb-4">// DATA_SOURCE</div>
+                <div className="text-4xl font-bold text-white mb-2">15+ User Interviews</div>
+                <div className="text-xl text-white mb-4">SQL & Python</div>
+                <p className="text-sm text-neutral-400 leading-relaxed">
+                  Validazione qualitativa (Modulo) unita ad analisi quantitativa.
                 </p>
-                <div className="font-mono text-xs font-bold text-blue-500 uppercase tracking-wider">
-                  📊 SQL & Python Ready
-                </div>
               </div>
 
-              {/* CARD 3: The Builder-Philosopher */}
-              <div className="bg-neutral-900/80 border border-neutral-800 p-8 rounded-sm text-left hover:border-yellow-500/30 transition-colors group">
-                <div className="mb-4 bg-yellow-500/10 w-12 h-12 flex items-center justify-center rounded-full group-hover:bg-yellow-500/20 transition-colors">
-                  <Zap className="text-yellow-500" size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 font-serif">The Builder-Philosopher</h3>
-                <p className="text-sm text-neutral-400 leading-relaxed mb-6">
-                  Alfabetizzazione tecnica per parlare con i Dev + Pensiero critico per allineare gli Stakeholder.
+              {/* CARD 3: System Output */}
+              <div className="bg-transparent border border-neutral-700 p-8 rounded-sm text-left hover:border-neutral-500 transition-colors">
+                <div className="font-mono text-xs text-neutral-500 mb-4">// SYSTEM_OUTPUT</div>
+                <div className="text-4xl font-bold text-white mb-2">+50% Engagement</div>
+                <div className="text-xl text-white mb-4">3 Projects Shipped</div>
+                <p className="text-sm text-neutral-400 leading-relaxed">
+                  Impatto misurabile sugli stakeholder e gestione della complessità.
                 </p>
-                <div className="font-mono text-xs font-bold text-yellow-500 uppercase tracking-wider">
-                  🤝 Cross-functional Glue
-                </div>
               </div>
 
             </div>
