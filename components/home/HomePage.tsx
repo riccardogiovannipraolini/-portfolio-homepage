@@ -123,66 +123,71 @@ const App = () => {
         )}
       </header>
 
+      {/* === BADGE STICKY SOTTO HEADER === */}
+      <div className="fixed top-14 left-0 right-0 z-40 flex justify-center pointer-events-none">
+        <div className="bg-transparent border border-orange-600 text-orange-600 px-4 py-1 md:px-6 md:py-1.5 font-mono font-bold text-[10px] md:text-xs tracking-widest rounded-b-lg flex items-center gap-2">
+          <div className="w-1.5 h-1.5 bg-orange-600 rounded-full animate-pulse"></div>
+          JUNIOR PRODUCT MANAGER | BUILDER-PHILOSOPHER
+        </div>
+      </div>
+
 
 
       <main>
         {/* === 1. HERO SECTION (REFACTORED) === */}
-        <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#0a0a0a] text-center px-6 py-24 md:py-32 border-b-8 border-orange-500 z-10" id="home">
-          {/* Background Elements */}
-          <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#333 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
-          <div className="absolute top-0 w-full h-full bg-gradient-to-b from-neutral-900/50 to-[#0a0a0a] pointer-events-none"></div>
+        <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#050505] text-center px-6 py-24 md:py-32 border-b-8 border-orange-500 z-10" id="home">
 
-          <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center">
-
-            {/* 1. BADGE */}
-            <div className="mb-8 animate-in slide-in-from-bottom-4 fade-in duration-700">
-              <span className="bg-orange-600 text-white px-4 py-1.5 rounded-full font-mono text-[10px] md:text-xs font-bold tracking-widest uppercase shadow-lg shadow-orange-900/20">
-                Junior Product Manager | Builder-Philosopher
-              </span>
-            </div>
+          <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center">
 
             {/* 2. HEADLINE (H1) */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium text-white leading-[1.1] mb-6 animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-100">
-              The Strategy of Why.<br />
-              The Engine of How.
+              The <span className="text-green-600">Engine</span> of How.<br />
+              The <span className="text-orange-600">Strategy</span> of <span className="text-blue-600">Why</span>.
             </h1>
 
             {/* 3. SUB-HEADLINE (H2) */}
-            <p className="text-xl md:text-2xl text-neutral-300 font-sans max-w-2xl leading-relaxed mb-16 animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-200">
-              Junior PM. Traduco l'ambiguità del business in ticket pronti per lo sviluppo. Meno opinioni, più dati e logica.
+            <p className="text-xl md:text-2xl text-neutral-400 font-sans max-w-4xl leading-relaxed mb-20 animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-200">
+              Il mio background in filosofia mi spinge a chiedermi il perché delle cose, l'esperienza su progetti personali mi permette di stabilire come farle accadere.
             </p>
 
-            {/* 4. GRID CARDS */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full animate-in slide-in-from-bottom-12 fade-in duration-1000 delay-300">
+            {/* 4. DATA POINTS ROW (Editorial Style) */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0 w-full max-w-5xl animate-in slide-in-from-bottom-12 fade-in duration-1000 delay-300">
 
-              {/* CARD 1: Team Leadership */}
-              <div className="bg-transparent border border-neutral-700 p-8 rounded-sm text-left hover:border-neutral-500 transition-colors">
-                <div className="font-mono text-xs text-neutral-500 mb-4">&gt; TEAM_LEADERSHIP</div>
-                <div className="text-4xl font-bold text-orange-600 mb-4">10+ Persone</div>
-                <p className="text-sm text-neutral-200 leading-relaxed">
-                  Coordinato team cross-funzionale (Design+Dev) riducendo i tempi di allineamento del <strong className="text-white">30%</strong>.
+              {/* DATA POINT 1: Delivery Speed */}
+              <div className="flex-1 text-center px-8">
+                <div className="text-6xl font-serif font-bold text-green-600 mb-3">-30%</div>
+                <div className="text-xl font-bold text-white mb-2">Delivery Speed</div>
+                <p className="text-sm text-neutral-500 leading-relaxed">
+                  Ottimizzazione team design/dev
                 </p>
               </div>
 
-              {/* CARD 2: Research Data */}
-              <div className="bg-transparent border border-neutral-700 p-8 rounded-sm text-left hover:border-neutral-500 transition-colors">
-                <div className="font-mono text-xs text-neutral-500 mb-4">&gt; RESEARCH_DATA</div>
-                <div className="text-4xl font-bold text-orange-600 mb-4">SQL & Python</div>
-                <p className="text-sm text-neutral-200 leading-relaxed">
-                  Validazione qualitativa (15+ interviste) unita ad analisi dati per eliminare le ipotesi rischiose <strong className="text-white">prima del codice</strong>.
+              {/* Vertical Divider */}
+              <div className="hidden md:block w-px h-32 bg-neutral-800"></div>
+
+              {/* DATA POINT 2: Discovery */}
+              <div className="flex-1 text-center px-8">
+                <div className="text-6xl font-serif font-bold text-blue-600 mb-3">15+</div>
+                <div className="text-xl font-bold text-white mb-2">Discovery</div>
+                <p className="text-sm text-neutral-500 leading-relaxed">
+                  Interviste & Analisi Dati
                 </p>
               </div>
 
-              {/* CARD 3: Impact Metrics */}
-              <div className="bg-transparent border border-neutral-700 p-8 rounded-sm text-left hover:border-neutral-500 transition-colors">
-                <div className="font-mono text-xs text-neutral-500 mb-4">&gt; IMPACT_METRICS</div>
-                <div className="text-4xl font-bold text-orange-600 mb-4">+50% Engagement</div>
-                <p className="text-sm text-neutral-200 leading-relaxed">
-                  Dall'idea al lancio (<strong className="text-white">Shipped</strong>). Strategia basata su KPI misurabili, non sull'intuito.
+              {/* Vertical Divider */}
+              <div className="hidden md:block w-px h-32 bg-neutral-800"></div>
+
+              {/* DATA POINT 3: Strategy */}
+              <div className="flex-1 text-center px-8">
+                <div className="text-6xl font-serif font-bold text-orange-600 mb-3">Shipped</div>
+                <div className="text-xl font-bold text-white mb-2">Strategy</div>
+                <p className="text-sm text-neutral-500 leading-relaxed">
+                  Dall'idea al lancio reale
                 </p>
               </div>
 
             </div>
+
           </div>
         </section>
 
@@ -198,10 +203,9 @@ const App = () => {
             <div className="bg-[#F2F0E9] p-8 md:p-16 border-r border-neutral-300 relative z-20 flex flex-col justify-center items-center text-center">
               <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper.png')] opacity-50 pointer-events-none"></div>
               <div className="relative z-10">
-                <div className="w-16 h-1 bg-orange-500 mb-8 mx-auto"></div>
-                <h2 className="font-mono text-orange-500 uppercase tracking-widest mb-6 font-bold text-sm md:text-base">PORTFOLIO</h2>
+
                 <h3 className="text-5xl md:text-8xl font-serif font-bold text-neutral-900 leading-tight mb-6">Selected<br />Works.</h3>
-                <p className="font-serif text-xl text-neutral-600 italic max-w-md">"Da discovery a delivery: progetti reali dove ho applicato product thinking e execution ownership."</p>
+
               </div>
             </div>
             <div className="bg-[#0a0a0a] p-8 md:p-16 relative z-20 flex flex-col justify-center items-center">
@@ -218,16 +222,16 @@ const App = () => {
                     </li>
                     {/* SCAMBIATO ORDINE: MODULO ORA È IL SECONDO */}
                     <li className="flex gap-2 group">
-                      <span className="text-green-600">→</span>
-                      <a href="#case-study-2" className="hover:text-green-400 hover:underline decoration-green-500/50 underline-offset-4 transition-all">
-                        <span className="text-white font-bold">MODULO:</span> Discovery focus
+                      <span className="text-blue-600">→</span>
+                      <a href="#case-study-2" className="hover:text-blue-400 hover:underline decoration-blue-500/50 underline-offset-4 transition-all">
+                        <span className="text-white font-bold">MODULO:</span> <span className="text-blue-500">Discovery focus</span>
                       </a>
                     </li>
                     {/* RINOMINATO PRIMO IMPIEGO IN JOB SEARCH E SPOSTATO AL TERZO POSTO */}
                     <li className="flex gap-2 group">
-                      <span className="text-green-600">→</span>
-                      <a href="#case-study-3" className="hover:text-green-400 hover:underline decoration-green-500/50 underline-offset-4 transition-all">
-                        <span className="text-white font-bold">JOB SEARCH:</span> Product thinking
+                      <span className="text-orange-600">→</span>
+                      <a href="#case-study-3" className="hover:text-orange-400 hover:underline decoration-orange-500/50 underline-offset-4 transition-all">
+                        <span className="text-white font-bold">JOB SEARCH:</span> <span className="text-orange-500">Product thinking</span>
                       </a>
                     </li>
                   </ul>
@@ -243,7 +247,7 @@ const App = () => {
           <div id="case-study-1" className="relative w-full h-24 bg-neutral-900 flex items-center justify-center z-30 overflow-hidden">
             <div className="absolute w-full h-px bg-neutral-700"></div>
             <div className="relative bg-neutral-900 px-6 py-2 border border-neutral-700 rounded-full text-white font-mono text-xl font-bold flex items-center gap-3">
-              <span className="text-orange-500">#01</span> NAMELESS GAME DEV
+              <span className="text-green-600">#01</span> NAMELESS GAME DEV
             </div>
           </div>
 
@@ -399,7 +403,7 @@ const App = () => {
             <div className="absolute w-full h-px bg-neutral-700"></div>
             <div className="relative bg-neutral-900 px-6 py-2 border border-neutral-700 rounded-full text-white font-mono text-xl font-bold flex items-center gap-3">
               {/* AGGIORNATO TITOLO DIVIDER */}
-              <span className="text-purple-500">#03</span> JOB SEARCH AS PRODUCT
+              <span className="text-orange-500">#03</span> JOB SEARCH AS PRODUCT
             </div>
           </div>
 
@@ -412,12 +416,12 @@ const App = () => {
                 {/* AGGIORNATO TITOLO SEZIONE */}
                 <h3 className="text-4xl font-serif font-bold text-neutral-900 mb-6">Job Search as Product</h3>
                 <div className="flex items-center gap-3 mb-8">
-                  <span className="font-mono text-xs font-bold bg-purple-100 text-purple-600 px-3 py-1 rounded-full border border-purple-200">PRODUCT THINKING</span>
+                  <span className="font-mono text-xs font-bold bg-orange-100 text-orange-600 px-3 py-1 rounded-full border border-orange-200">PRODUCT THINKING</span>
                 </div>
                 <p className="font-serif text-lg text-neutral-800 leading-relaxed mb-8">
                   Ho trattato la mia ricerca lavoro come un prodotto: ICP targeting, positioning strategy, funnel optimization, roadmap con OKR. First-principles thinking applicato alla carriera.
                 </p>
-                <button className="group flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-neutral-900 border-b-2 border-neutral-900 hover:text-purple-600 hover:border-purple-600 transition-colors pb-1 w-fit">
+                <button className="group flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-neutral-900 border-b-2 border-neutral-900 hover:text-orange-600 hover:border-orange-600 transition-colors pb-1 w-fit">
                   Leggi Case Study <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -449,7 +453,7 @@ const App = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="opacity-70">DIFFERENTIATION:</span>
-                      <span className="text-purple-400 font-bold">&lt;1% market overlap</span>
+                      <span className="text-orange-400 font-bold">&lt;1% market overlap</span>
                     </div>
                     <div className="mt-2 pt-2 border-t border-green-900/30">
                       <span className="opacity-70 block mb-1">FUNNEL_METRICS:</span>
@@ -551,17 +555,6 @@ const App = () => {
             </div>
           </div>
 
-        </section>
-
-        {/* === 6. INTERMISSION: ABOUT ME === */}
-        <section className="py-32 bg-stone-100 border-t border-b border-neutral-300 text-center relative z-20 flex flex-col justify-center items-center min-h-screen">
-          <div className="text-neutral-400 mb-6">
-            <Fingerprint size={64} strokeWidth={1} />
-          </div>
-          <h2 className="font-mono text-xl md:text-2xl tracking-[0.4em] text-neutral-600 mb-6">/// WHO I AM</h2>
-          <p className="font-serif text-3xl md:text-4xl max-w-2xl mx-auto leading-tight text-neutral-800">
-            Da Filosofia a Product Management. Come ho unito humanities e tech per costruire il Builder-Philosopher.
-          </p>
         </section>
 
         {/* === 7. ABOUT ME SECTION === */}
