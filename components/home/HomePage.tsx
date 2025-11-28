@@ -123,15 +123,7 @@ const App = () => {
         )}
       </header>
 
-      {/* === BADGE FISSO === */}
-      <div className="fixed top-14 left-0 w-full z-40 pointer-events-none">
-        <div className="flex justify-center">
-          <div className="bg-orange-700 text-white px-4 py-1 md:px-6 md:py-1.5 font-mono font-bold text-[10px] md:text-xs tracking-widest shadow-xl rounded-b-lg flex items-center gap-2">
-            <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
-            Junior Product Manager | Builder-Philosopher
-          </div>
-        </div>
-      </div>
+
 
       <main>
         {/* === 1. HERO SECTION (REFACTORED) === */}
