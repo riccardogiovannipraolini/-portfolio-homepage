@@ -148,40 +148,37 @@ const App = () => {
             </h1>
 
             {/* 3. SUB-HEADLINE (H2) */}
-            <p className="text-lg md:text-xl text-neutral-400 font-sans max-w-2xl leading-relaxed mb-16 animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-200">
-              Unisco la logica umanistica all'esecuzione tecnica per trasformare i problemi utente in roadmap chiare e prodotti rilasciati.
+            <p className="text-xl md:text-2xl text-neutral-300 font-sans max-w-2xl leading-relaxed mb-16 animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-200">
+              Junior PM. Traduco l'ambiguità del business in ticket pronti per lo sviluppo. Meno opinioni, più dati e logica.
             </p>
 
             {/* 4. GRID CARDS */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full animate-in slide-in-from-bottom-12 fade-in duration-1000 delay-300">
 
-              {/* CARD 1: Execution Log */}
+              {/* CARD 1: Team Leadership */}
               <div className="bg-transparent border border-neutral-700 p-8 rounded-sm text-left hover:border-neutral-500 transition-colors">
-                <div className="font-mono text-xs text-neutral-500 mb-4">// EXECUTION_LOG</div>
-                <div className="text-4xl font-bold text-white mb-2">10+ Team Size</div>
-                <div className="text-xl text-white mb-4">-30% Overhead</div>
-                <p className="text-sm text-neutral-400 leading-relaxed">
-                  Coordinamento cross-funzionale (Nameless) e ottimizzazione processi.
+                <div className="font-mono text-xs text-neutral-500 mb-4">&gt; TEAM_LEADERSHIP</div>
+                <div className="text-4xl font-bold text-orange-600 mb-4">10+ Persone</div>
+                <p className="text-sm text-neutral-200 leading-relaxed">
+                  Coordinato team cross-funzionale (Design+Dev) riducendo i tempi di allineamento del <strong className="text-white">30%</strong>.
                 </p>
               </div>
 
-              {/* CARD 2: Data Source */}
+              {/* CARD 2: Research Data */}
               <div className="bg-transparent border border-neutral-700 p-8 rounded-sm text-left hover:border-neutral-500 transition-colors">
-                <div className="font-mono text-xs text-neutral-500 mb-4">// DATA_SOURCE</div>
-                <div className="text-4xl font-bold text-white mb-2">15+ User Interviews</div>
-                <div className="text-xl text-white mb-4">SQL & Python</div>
-                <p className="text-sm text-neutral-400 leading-relaxed">
-                  Validazione qualitativa (Modulo) unita ad analisi quantitativa.
+                <div className="font-mono text-xs text-neutral-500 mb-4">&gt; RESEARCH_DATA</div>
+                <div className="text-4xl font-bold text-orange-600 mb-4">SQL & Python</div>
+                <p className="text-sm text-neutral-200 leading-relaxed">
+                  Validazione qualitativa (15+ interviste) unita ad analisi dati per eliminare le ipotesi rischiose <strong className="text-white">prima del codice</strong>.
                 </p>
               </div>
 
-              {/* CARD 3: System Output */}
+              {/* CARD 3: Impact Metrics */}
               <div className="bg-transparent border border-neutral-700 p-8 rounded-sm text-left hover:border-neutral-500 transition-colors">
-                <div className="font-mono text-xs text-neutral-500 mb-4">// SYSTEM_OUTPUT</div>
-                <div className="text-4xl font-bold text-white mb-2">+50% Engagement</div>
-                <div className="text-xl text-white mb-4">3 Projects Shipped</div>
-                <p className="text-sm text-neutral-400 leading-relaxed">
-                  Impatto misurabile sugli stakeholder e gestione della complessità.
+                <div className="font-mono text-xs text-neutral-500 mb-4">&gt; IMPACT_METRICS</div>
+                <div className="text-4xl font-bold text-orange-600 mb-4">+50% Engagement</div>
+                <p className="text-sm text-neutral-200 leading-relaxed">
+                  Dall'idea al lancio (<strong className="text-white">Shipped</strong>). Strategia basata su KPI misurabili, non sull'intuito.
                 </p>
               </div>
 
