@@ -473,23 +473,21 @@ const App = () => {
 
         </div>
 
-        {/* === 4. INTERMISSION: COMPLEMENTARY CASE STUDIES === */}
-        <section className="py-32 bg-stone-100 border-t border-b border-neutral-300 text-center relative z-20 flex flex-col justify-center items-center min-h-screen">
-          <div className="text-neutral-400 mb-6">
-            <Layers size={64} strokeWidth={1} />
+        {/* === SEPARATOR: MORE VERTICAL STUFF === */}
+        <div className="w-full bg-[#050505] py-16 flex items-center justify-center relative">
+          <div className="absolute inset-x-0 h-px bg-neutral-900"></div>
+          <div className="relative z-10 bg-[#050505] px-6">
+            <div className="px-8 py-3 border border-neutral-800 rounded-full bg-[#050505] text-white font-sans text-sm font-bold tracking-[0.2em] uppercase">
+              MORE VERTICAL STUFF
+            </div>
           </div>
-          <h2 className="font-mono text-xl md:text-2xl tracking-[0.4em] text-neutral-600 mb-6">/// COMPLEMENTARY_TRACKS</h2>
-          <p className="font-serif text-3xl md:text-4xl max-w-2xl mx-auto leading-tight text-neutral-800">
-            Oltre i progetti: Approfondimenti verticali
-          </p>
-        </section>
+        </div>
 
-        {/* === 5. SPECIALIZED TRACKS (NEW SEPARATE GRID) === */}
-        <section className="w-full grid grid-cols-1 md:grid-cols-2 border-b border-neutral-900 min-h-screen">
+        {/* === 5. DEEP DIVES (PHILOSOPHER & BUILDER) === */}
+        <section className="w-full grid grid-cols-1 md:grid-cols-2 border-b border-neutral-900 bg-[#050505]">
 
           {/* LEFT: PURE STRATEGY ARCHIVE */}
-          {/* RIMOSSO justify-center e p-8/p-16 generico. AGGIUNTO pt-32 px-8 md:px-16 pb-16 per allineamento fisso in alto */}
-          <div className="bg-[#F2F0E9] relative flex flex-col pt-32 px-8 md:px-16 pb-16 border-r border-neutral-300">
+          <div className="bg-[#F2F0E9] relative flex flex-col pt-16 px-8 md:px-16 pb-16 border-r border-neutral-300">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper.png')] opacity-50 pointer-events-none"></div>
             <div className="relative z-10 h-full flex flex-col">
               <div className="flex items-center gap-3 mb-8">
@@ -497,7 +495,6 @@ const App = () => {
                 <h3 className="font-serif text-3xl font-bold text-neutral-900">PHILOSOPHER DEEP-DIVES</h3>
               </div>
 
-              {/* AGGIUNTO flex-1, flex-col, justify-between e gap-8 per distribuire le card e allineare l'ultima in fondo */}
               <div className="flex-1 flex flex-col justify-between gap-8">
                 {philosopherDeepDives.map((item, idx) => (
                   <div key={idx} className="group cursor-pointer border-b border-neutral-300 pb-6 hover:pl-4 transition-all duration-300">
@@ -520,8 +517,7 @@ const App = () => {
           </div>
 
           {/* RIGHT: PURE BUILDER REPO */}
-          {/* RIMOSSO justify-center e p-8/p-16 generico. AGGIUNTO pt-32 px-8 md:px-16 pb-16 per allineamento fisso in alto */}
-          <div className="bg-[#0a0a0a] relative overflow-hidden flex flex-col pt-32 px-8 md:px-16 pb-16">
+          <div className="bg-[#0a0a0a] relative overflow-hidden flex flex-col pt-16 px-8 md:px-16 pb-16">
             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(#22c55e 1px, transparent 1px), linear-gradient(90deg, #22c55e 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
             <div className="relative z-10 h-full flex flex-col">
               <div className="flex items-center gap-3 mb-8">
@@ -529,7 +525,6 @@ const App = () => {
                 <h3 className="font-mono text-3xl font-bold text-white">BUILDER DEEP-DIVES</h3>
               </div>
 
-              {/* AGGIUNTO flex-1, flex-col, justify-between e gap-6 per distribuire le card e allineare l'ultima in fondo */}
               <div className="flex-1 flex flex-col justify-between gap-6">
                 {builderDeepDives.map((item, idx) => (
                   <div key={idx} className="group cursor-pointer bg-neutral-900/50 border border-green-900/30 p-6 hover:border-green-500 transition-all duration-300">
@@ -539,11 +534,9 @@ const App = () => {
                       </h4>
                       <span className="text-xs font-mono text-neutral-400 bg-neutral-800 px-2 py-1 rounded">{item.lang}</span>
                     </div>
-                    {/* RIMOSSO mb-4 per usare mt-4 nel container sotto, uniformando la spaziatura con la colonna sinistra */}
                     <p className="text-sm text-neutral-400 font-mono leading-relaxed">
                       {item.desc}
                     </p>
-                    {/* AGGIUNTO mt-4 e stile BADGE (bg-neutral-800, px-3, py-1, uppercase) per allineare visivamente a "View Doc" */}
                     <div className="mt-4 flex items-center gap-4 text-xs font-mono text-neutral-600">
                       <span className="bg-neutral-800 text-green-600 px-3 py-1 rounded uppercase group-hover:text-green-400 group-hover:bg-neutral-700 transition-colors flex items-center gap-2">
                         View Snippet <ExternalLink size={12} />
@@ -556,6 +549,9 @@ const App = () => {
           </div>
 
         </section>
+
+        {/* ORANGE SEPARATOR */}
+        <div className="w-full h-2 bg-orange-500"></div>
 
         {/* === 7. ABOUT ME SECTION === */}
         <section className="py-24 bg-white text-neutral-900 border-t border-neutral-200 min-h-screen flex flex-col justify-center" id="about">
@@ -609,6 +605,9 @@ const App = () => {
             </div>
           </div>
         </section>
+
+        {/* ORANGE SEPARATOR */}
+        <div className="w-full h-2 bg-orange-500"></div>
 
         {/* === 8. FOOTER === */}
       </main>

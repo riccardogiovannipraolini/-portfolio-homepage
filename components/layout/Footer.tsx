@@ -17,8 +17,7 @@ const Footer = () => {
 
                 {/* HEADER SECTION */}
                 <div className="mb-12 text-center md:text-left">
-                    <div className="font-mono text-[#00FF88] text-xs uppercase mb-4">/// LET'S CONNECT</div>
-                    <h2 className="text-6xl font-serif text-white mb-6">Let's Talk.</h2>
+                    <h2 className="text-6xl font-serif text-orange-500 mb-6">Let's Talk.</h2>
                     <p className="text-[#B0B0B0] font-sans text-lg max-w-2xl leading-relaxed">
                         Hai un ruolo da Junior PM o vuoi discutere di execution? <br className="hidden md:block" />
                         Scrivimi o prenota un caffè.
@@ -72,11 +71,11 @@ const Footer = () => {
                     <div>
                         <div className="text-[#808080] text-xs font-bold uppercase mb-6 tracking-widest">ACTION</div>
                         <div className="flex flex-col gap-4 w-fit">
-                            <button className="w-full px-4 py-3 bg-white text-black rounded text-sm font-bold hover:bg-[#e5e5e5] transition-colors flex items-center justify-between gap-6">
+                            <button className="w-full px-4 py-3 bg-orange-500 text-black rounded text-sm font-bold hover:bg-orange-400 transition-colors flex items-center justify-between gap-6">
                                 <span>Download CV</span>
                                 <Download size={16} />
                             </button>
-                            <a href="https://calendar.notion.so/meet/riccardopraolini/ct4lt4o9p" target="_blank" rel="noopener noreferrer" className="w-full px-4 py-3 bg-[#0A0A0A] border border-neutral-800 text-white rounded text-sm font-bold hover:border-[#00FF88] hover:text-[#00FF88] transition-colors flex items-center justify-between gap-6">
+                            <a href="https://calendar.notion.so/meet/riccardopraolini/ct4lt4o9p" target="_blank" rel="noopener noreferrer" className="w-full px-4 py-3 bg-black border border-orange-500 text-orange-500 rounded text-sm font-bold hover:bg-orange-500 hover:text-black transition-colors flex items-center justify-between gap-6">
                                 <span>Schedule a Chat</span>
                                 <Calendar size={16} />
                             </a>
