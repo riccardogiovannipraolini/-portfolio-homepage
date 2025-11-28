@@ -134,92 +134,84 @@ const App = () => {
       </div>
 
       <main>
-        {/* === 1. HERO SECTION === */}
-        <div className="relative w-full min-h-screen flex flex-col md:flex-row border-b-8 border-orange-500 z-10 bg-stone-100" id="home">
-          {/* COLONNA SINISTRA: ridotto padding da pt-48 a pt-32 */}
-          <div className="w-full md:w-1/2 bg-[#F2F0E9] relative flex flex-col pt-32 px-8 md:px-16 pb-16 border-r border-neutral-900">
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/paper.png')] opacity-50 pointer-events-none"></div>
-            <div className="relative z-10">
-              <div className="flex items-center gap-2 text-neutral-600 font-mono text-xs font-bold uppercase tracking-widest mb-6">
-                <Compass size={14} className="text-orange-700" /> Product Mindset // Strategy
-              </div>
-              {/* AUMENTATO ANCORA IL FONT: da text-6xl/8xl a text-7xl/9xl */}
-              <h1 className="text-7xl md:text-9xl font-serif font-medium leading-[0.9] text-neutral-900 mb-8">
-                The <span className="italic text-orange-700">Strategy</span><br />of Why.
-              </h1>
-              <p className="font-serif text-xl text-neutral-700 max-w-md leading-relaxed">
-                "La strategia non è un'opinione, è un metodo. Analizzo il contesto e i bisogni utente per definire <span className="font-bold text-neutral-900 bg-orange-100 px-1">COSA</span> costruire, trasformando l'ambiguità in valore misurabile."
-              </p>
+        {/* === 1. HERO SECTION (REFACTORED) === */}
+        <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#0a0a0a] text-center px-6 py-24 md:py-32 border-b-8 border-orange-500 z-10" id="home">
+          {/* Background Elements */}
+          <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#333 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+          <div className="absolute top-0 w-full h-full bg-gradient-to-b from-neutral-900/50 to-[#0a0a0a] pointer-events-none"></div>
+
+          <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center">
+
+            {/* 1. BADGE */}
+            <div className="mb-8 animate-in slide-in-from-bottom-4 fade-in duration-700">
+              <span className="bg-orange-600 text-white px-4 py-1.5 rounded-full font-mono text-[10px] md:text-xs font-bold tracking-widest uppercase shadow-lg shadow-orange-900/20">
+                Junior Product Manager | Builder-Philosopher
+              </span>
             </div>
-          </div>
 
-          {/* COLONNA DESTRA: modificato allineamento a sinistra (items-start, text-left) e bordo spostato a sinistra */}
-          <div className="w-full md:w-1/2 bg-[#0a0a0a] relative flex flex-col items-start text-left pt-32 px-8 md:px-16 pb-16 overflow-hidden">
-            <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(#22c55e 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
-            <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-b from-green-900/10 to-black pointer-events-none"></div>
-            <div className="relative z-10 flex flex-col items-start">
-              <div className="flex items-center justify-start gap-2 text-green-500/50 font-mono text-xs font-bold uppercase tracking-widest mb-6 animate-pulse">
-                <KanbanSquare size={14} /> Agile Execution // Delivery
-              </div>
-              {/* AUMENTATO ANCORA IL FONT: da text-6xl/8xl a text-7xl/9xl */}
-              <h1 className="text-7xl md:text-9xl font-mono font-bold leading-[0.9] text-white mb-8 tracking-tight">
-                The <span className="text-green-500">Engine</span><br />of How.
-              </h1>
-              <div className="font-mono text-sm text-green-400/80 max-w-sm leading-relaxed border-l border-green-500 pl-4">
-                <p className="mb-3">{`> BACKLOG → SPRINT → SHIPPED.`}</p>
-                <p className="mb-3">{`> CROSS-FUNCTIONAL COORDINATION.`}</p>
-                <p>{`> EXECUTION OWNERSHIP, END-TO-END.`}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+            {/* 2. HEADLINE (H1) */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium text-white leading-[1.1] mb-6 animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-100">
+              The Strategy of Why.<br />
+              The Engine of How.
+            </h1>
 
-        {/* === 2. STATS / VALUE PROP === */}
-        {/* MODIFICATO: pt-24 aggiunto al div interno per abbassare il contenuto */}
-        <section className="relative w-full min-h-screen flex flex-col justify-center bg-neutral-900 text-white border-b border-neutral-800 z-10">
-          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+            {/* 3. SUB-HEADLINE (H2) */}
+            <p className="text-lg md:text-xl text-neutral-400 font-sans max-w-2xl leading-relaxed mb-16 animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-200">
+              Unisco la logica umanistica all'esecuzione tecnica per trasformare i problemi utente in roadmap chiare e prodotti rilasciati.
+            </p>
 
-          {/* Aggiunto pb-24 per creare spazio sotto le card prima del bordo della sezione successiva */}
-          <div className="max-w-6xl mx-auto px-8 relative z-10 w-full pt-24 pb-24">
-            <div className="mb-16 text-center">
-              <h2 className="font-mono text-orange-500 uppercase tracking-widest mb-4 font-bold text-lg">Value Proposition</h2>
-              <h3 className="text-4xl md:text-5xl font-serif font-bold">Impact by Design.</h3>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* 4. GRID CARDS */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full animate-in slide-in-from-bottom-12 fade-in duration-1000 delay-300">
 
-              {/* CARD 1: EXECUTION MASTERY (NO INTERACTIVITY) */}
-              <div className="p-8 md:p-10 border border-neutral-800 bg-neutral-900/50">
-                <div className="flex items-center justify-between mb-6">
-                  <CheckCircle2 size={32} className="text-green-500" />
-                  <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">EXECUTION MASTERY</span>
+              {/* CARD 1: Agile Delivery */}
+              <div className="bg-neutral-900/80 border border-neutral-800 p-8 rounded-sm text-left hover:border-orange-500/30 transition-colors group">
+                <div className="mb-4 bg-orange-500/10 w-12 h-12 flex items-center justify-center rounded-full group-hover:bg-orange-500/20 transition-colors">
+                  <CheckCircle2 className="text-orange-500" size={24} />
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-white mb-4">Delivery Affidabile</h3>
-                <p className="text-base text-neutral-400 leading-relaxed">Trasformo roadmap ambigue in ticket Jira pronti per il dev, riducendo i colli di bottiglia del 30%.</p>
+                <h3 className="text-xl font-bold text-white mb-3 font-serif">Agile Delivery</h3>
+                <p className="text-sm text-neutral-400 leading-relaxed mb-6">
+                  Trasformo roadmap ambigue in ticket Jira pronti per il dev. Focus su sbloccare il team e ridurre il time-to-market.
+                </p>
+                <div className="font-mono text-xs font-bold text-orange-500 uppercase tracking-wider">
+                  🚀 Shipped 2 MVPs
+                </div>
               </div>
 
-              {/* CARD 2: PRODUCT MINDSET (NO INTERACTIVITY) */}
-              <div className="p-8 md:p-10 border border-neutral-800 bg-neutral-900/50">
-                <div className="flex items-center justify-between mb-6">
-                  <Brain size={32} className="text-blue-500" />
-                  <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">PRODUCT MINDSET</span>
+              {/* CARD 2: Data-Informed Discovery */}
+              <div className="bg-neutral-900/80 border border-neutral-800 p-8 rounded-sm text-left hover:border-blue-500/30 transition-colors group">
+                <div className="mb-4 bg-blue-500/10 w-12 h-12 flex items-center justify-center rounded-full group-hover:bg-blue-500/20 transition-colors">
+                  <LineChart className="text-blue-500" size={24} />
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-white mb-4">Decisioni Data-Driven</h3>
-                <p className="text-base text-neutral-400 leading-relaxed">Non mi baso su opinioni. Uso SQL e Analytics per validare ogni ipotesi prima dello sviluppo.</p>
+                <h3 className="text-xl font-bold text-white mb-3 font-serif">Data-Informed Discovery</h3>
+                <p className="text-sm text-neutral-400 leading-relaxed mb-6">
+                  Non tiro a indovinare. Uso SQL e Pandas per validare le ipotesi e interviste utente per definire il 'Cosa'.
+                </p>
+                <div className="font-mono text-xs font-bold text-blue-500 uppercase tracking-wider">
+                  📊 SQL & Python Ready
+                </div>
               </div>
 
-              {/* CARD 3: RARE COMBINATION (NO INTERACTIVITY) */}
-              <div className="p-8 md:p-10 border border-neutral-800 bg-neutral-900/50">
-                <div className="flex items-center justify-between mb-6">
-                  <Zap size={32} className="text-orange-500" />
-                  <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">RARE COMBINATION</span>
+              {/* CARD 3: The Builder-Philosopher */}
+              <div className="bg-neutral-900/80 border border-neutral-800 p-8 rounded-sm text-left hover:border-yellow-500/30 transition-colors group">
+                <div className="mb-4 bg-yellow-500/10 w-12 h-12 flex items-center justify-center rounded-full group-hover:bg-yellow-500/20 transition-colors">
+                  <Zap className="text-yellow-500" size={24} />
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-white mb-4">Humanities + Tech</h3>
-                <p className="text-base text-neutral-400 leading-relaxed">Filosofia + alfabetizzazione tecnica: first-principles thinking applicato con AI literacy e SQL funzionale.</p>
+                <h3 className="text-xl font-bold text-white mb-3 font-serif">The Builder-Philosopher</h3>
+                <p className="text-sm text-neutral-400 leading-relaxed mb-6">
+                  Alfabetizzazione tecnica per parlare con i Dev + Pensiero critico per allineare gli Stakeholder.
+                </p>
+                <div className="font-mono text-xs font-bold text-yellow-500 uppercase tracking-wider">
+                  🤝 Cross-functional Glue
+                </div>
               </div>
 
             </div>
           </div>
         </section>
+
+        {/* === 2. STATS / VALUE PROP === */}
+        {/* MODIFICATO: pt-24 aggiunto al div interno per abbassare il contenuto */}
+
 
         {/* === MAIN CONTENT: CORE HYBRID CASE STUDIES === */}
         <div className="flex flex-col w-full relative bg-neutral-900" id="projects">

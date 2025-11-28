@@ -59,7 +59,7 @@ const Footer = () => {
                                 </div>
                                 <span className="text-sm">LinkedIn</span>
                             </a>
-                            <a href="https://github.com/riccardopraolini" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white hover:text-[#00FF88] transition-colors group">
+                            <a href="https://github.com/riccardogiovannipraolini-collab" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white hover:text-[#00FF88] transition-colors group">
                                 <div className="w-8 h-8 rounded-full bg-neutral-900 flex items-center justify-center group-hover:bg-[#00FF88]/10 transition-colors">
                                     <Github size={16} className="text-[#B0B0B0] group-hover:text-white" />
                                 </div>
