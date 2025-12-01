@@ -155,7 +155,7 @@ const App = () => {
 
               {/* DATA POINT 1: Delivery Speed */}
               <div className="flex-1 text-center px-8">
-                <div className="text-6xl font-serif font-bold text-green-600 mb-3">-30%</div>
+                <div className="text-6xl font-serif font-bold text-green-600 mb-3">+40%</div>
                 <div className="text-xl font-bold text-white mb-2">Delivery Speed</div>
                 <p className="text-sm text-neutral-500 leading-relaxed">
                   Ottimizzazione team design/dev

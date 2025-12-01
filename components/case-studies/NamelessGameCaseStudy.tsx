@@ -638,7 +638,7 @@ export default function NamelessGameCaseStudy() {
                                             <div className="bg-[#050505] border border-green-500/30 p-6 font-mono text-xs leading-relaxed text-green-400 relative">
                                                 <div className="absolute top-0 right-0 bg-green-900/20 text-green-500 text-[10px] px-2 py-1 font-bold">v1.0.2</div>
                                                 <div className="text-green-700 mb-4 font-bold">// CALCULATING SAFE_CAPACITY</div>
-                                                <div><span className="text-purple-400">const</span> TEAM_SIZE = 2; WEEKLY = 40h;</div>
+                                                <div><span className="text-purple-400">const</span> TEAM_SIZE = 10; WEEKLY = 40h;</div>
                                                 <div className="bg-green-900/20 -mx-6 px-6 py-1 my-1 border-l-2 border-green-500 flex items-center justify-between">
                                                     <span>| BUFFER = 20%</span>
                                                     <span className="text-green-600 opacity-50">// Absorbs friction</span>
