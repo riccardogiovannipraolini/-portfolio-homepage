@@ -182,7 +182,7 @@ const App = () => {
                 <div className="text-6xl font-serif font-bold text-orange-600 mb-3">Shipped</div>
                 <div className="text-xl font-bold text-white mb-2">Strategy</div>
                 <p className="text-sm text-neutral-500 leading-relaxed">
-                  Dall'idea al lancio reale
+                  Dall'idea al lancio
                 </p>
               </div>
 
